@@ -1,0 +1,185 @@
+/* Global Styles */
+* {
+  box-sizing: border-box; /* Include padding and borders in element dimensions */
+}
+
+body {
+  font-family: "Karla", sans-serif; /* Default font for the application */
+  margin: 0; /* No margin */
+  padding: 0; /* No padding */
+}
+
+/* Header Styles */
+.header {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+  height: 65px; /* Header height */
+  background: linear-gradient(
+    90deg,
+    #672280 1.18%,
+    #a626d3 100%
+  ); /* Gradient background */
+  color: white; /* Text color */
+  padding: 20px; /* Padding within the header */
+}
+
+.header--image {
+  height: 100%; /* Image fills the height of the header */
+  margin-right: 6px; /* Spacing between image and text */
+}
+
+.header--title {
+  font-size: 1.25rem; /* Font size for the header title */
+  margin-right: auto; /* Align title to the left */
+}
+
+.header--project {
+  font-size: 0.75rem; /* Smaller font size for project info */
+  font-weight: 500; /* Bold text */
+}
+
+/* Form Styles */
+.form {
+  display: grid; /* Grid layout for input fields */
+  grid-template-columns: 1fr 1fr; /* Two equally spaced columns */
+  gap: 17px; /* Spacing between elements */
+  padding: 20px; /* Padding within the form */
+}
+
+.form--input {
+  font-family: "Karla", sans-serif; /* Font for input fields */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #d5d4d8; /* Border color */
+  text-indent: 5px; /* Indentation inside the input */
+}
+
+.form--button {
+  grid-column: 1 / -1; /* The button spans both columns */
+  font-family: "Karla", sans-serif; /* Font for the button */
+  border-radius: 5px; /* Rounded corners */
+  background: linear-gradient(
+    90.41deg,
+    #711f8d 1.14%,
+    #a818da 100%
+  ); /* Gradient background */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  cursor: pointer; /* Cursor changes to pointer */
+}
+
+/* Meme Preview Styles */
+.meme-container {
+  position: relative; /* Allows absolute positioning for child elements */
+  text-align: center; /* Center-align the content horizontally */
+}
+
+.meme--image {
+  max-width: 100%; /* Ensure the image fits within the container */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Updated class names for saved meme text */
+.saved-meme--text {
+  position: absolute; /* Allows precise control over text placement */
+  width: 100%; /* Text spans the full width */
+  color: white; /* White text for contrast */
+  text-transform: uppercase; /* Uppercase text */
+  text-shadow: 2px 2px 2px black; /* Text shadow for visibility */
+  text-align: center; /* Center-align the text */
+}
+
+.saved-meme--text.top {
+  top: 10%; /* Position top text 10% from the top */
+}
+
+.saved-meme--text.bottom {
+  bottom: 10%; /* Position bottom text 10% from the bottom */
+}
+
+/* Meme-specific Styles */
+.single-saved-meme {
+  position: relative; /* Needed for absolute positioning */
+  border: 1px solid #d5d4d8; /* Border around the saved meme */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Padding within the saved meme */
+  margin-bottom: 10px; /* Space between saved memes */
+  background-color: #f7f7f7; /* Light background color */
+}
+
+/* Button Styles for Saved Memes */
+.saved-meme-button {
+  font-family: "Karla", sans-serif; /* Font for the buttons */
+  background: linear-gradient(
+    90.41deg,
+    #711f8d 1.14%,
+    #a818da 100%
+  ); /* Gradient background */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor changes to pointer */
+}
+
+.saved-meme-button-container {
+  display: flex; /* Flex layout for button alignment */
+  justify-content: space-between; /* Space between buttons */
+  padding: 10px; /* Padding within the container */
+}
+
+/* Saved Memes List Styles */
+.saved-memes {
+  margin-top: 20px; /* Margin at the top of the list */
+  padding: 10px; /* Padding within the container */
+  background-color: #f7f7f7; /* Light background for the list */
+}
+
+.saved-memes h1 {
+  font-size: 1.5rem; /* Font size for the heading */
+  text-align: center; /* Center-align the heading */
+  text-decoration: underline; /* Underline for the heading */
+}
+
+/* Edit Container for Editing Memes */
+.edit-meme-container {
+  display: flex; /* Flex layout for positioning */
+  flex-direction: column; /* Arrange elements vertically */
+  align-items: center; /* Center-align content */
+  border: 1px solid #d5d4d8; /* Border around the container */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Padding within the container */
+  background-color: #f7f7f7; /* Light background color */
+}
+
+/* Image within the Edit Container */
+.edit-meme-image {
+  max-width: 100%; /* Ensure the image fits within the container */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Input fields within the Edit Container */
+.edit-meme-input {
+  font-family: "Karla", sans-serif; /* Font for inputs */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #d5d4d8; /* Border color */
+  padding: 10px; /* Padding within the input */
+  width: 80%; /* Input fields take 80% of the container's width */
+  margin-bottom: 10px; /* Space between inputs */
+}
+
+/* Buttons within the Edit Container */
+.edit-meme-save-button,
+.edit-meme-cancel-button {
+  font-family: "Karla", sans-serif; /* Font for buttons */
+  background: linear-gradient(
+    90.41deg,
+    #711f8d 1.14%,
+    #a818da 100%
+  ); /* Gradient background */
+  color: white; /* Button text color */
+  border-radius: 5px; /* Rounded corners */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor */
+  padding: 10px 20px; /* Padding for the button */
+  margin: 5px; /* Space between buttons */
+}
