@@ -1,22 +1,22 @@
-# 🖼️ Meme Generator App
+# Meme Generator App
 
 A simple, interactive **React + Vite** application that lets users create custom memes by overlaying text on random meme images.  
 Built as a front-end project to demonstrate **React component design, state management, and API integration**.
 
 ---
 
-## 🚀 Features
+## Features
 
-- 🧠 **Dynamic Meme Generator** — Fetches random meme images from the [Imgflip API](https://api.imgflip.com/get_memes).
-- ✍️ **Text Overlay** — Add and edit top/bottom text dynamically.
-- ⚙️ **React Hooks** — Uses `useState`, `useEffect`, and event handlers to manage meme data.
-- 📦 **Reusable Components** — Modular design with clear separation of concerns.
-- 🎨 **Responsive Layout** — Clean, simple CSS that adapts to different screen sizes.
+- **Dynamic Meme Generator** — Fetches random meme images from the [Imgflip API](https://api.imgflip.com/get_memes).
+- **Text Overlay** — Add and edit top/bottom text dynamically.
+- **React Hooks** — Uses `useState`, `useEffect`, and event handlers to manage meme data.
+- **Reusable Components** — Modular design with clear separation of concerns.
+- **Responsive Layout** — Clean, simple CSS that adapts to different screen sizes.
 - ⚡ **Fast Development** — Powered by Vite for instant updates and modern bundling.
 
 ---
 
-## 🧩 Tech Stack
+## Tech Stack
 
 | Layer | Technologies |
 |-------|---------------|
@@ -26,7 +26,7 @@ Built as a front-end project to demonstrate **React component design, state mana
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 - **public/** — static assets and Vite logo
 - **src/**
